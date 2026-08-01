@@ -1,9 +1,11 @@
 /* ===== CSS Variables ===== */
 :root {
-    --primary: #0A4D8C;
-    --primary-dark: #083A6B;
-    --primary-light: #00A3E0;
-    --accent: #00C2A8;
+    /* Gardenia brand colors from logo */
+    --primary: #0A1482;
+    --primary-dark: #070E5C;
+    --primary-light: #1A2EBF;
+    --accent: #E60000;
+    --accent-soft: #FF3333;
     --dark: #0F172A;
     --dark-2: #1E293B;
     --gray-900: #0F172A;
@@ -132,12 +134,12 @@ h4 { font-size: 1.05rem; }
 .btn-primary {
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     color: var(--white);
-    box-shadow: 0 4px 14px rgba(10, 77, 140, 0.35);
+    box-shadow: 0 4px 14px rgba(10, 20, 130, 0.35);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(10, 77, 140, 0.45);
+    box-shadow: 0 6px 20px rgba(10, 20, 130, 0.45);
 }
 
 .btn-outline {
@@ -149,7 +151,7 @@ h4 { font-size: 1.05rem; }
 .btn-outline:hover {
     border-color: var(--primary-light);
     color: var(--primary-light);
-    background: rgba(0, 163, 224, 0.05);
+    background: rgba(26, 46, 191, 0.05);
 }
 
 .btn-white {
@@ -283,7 +285,7 @@ h4 { font-size: 1.05rem; }
     position: relative;
     padding: 140px 0 80px;
     overflow: hidden;
-    background: linear-gradient(180deg, #F0F7FF 0%, var(--white) 100%);
+    background: linear-gradient(180deg, #EEF0FF 0%, var(--white) 100%);
 }
 
 .hero-bg {
@@ -296,8 +298,8 @@ h4 { font-size: 1.05rem; }
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgba(10, 77, 140, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(10, 77, 140, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(10, 20, 130, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10, 20, 130, 0.03) 1px, transparent 1px);
     background-size: 48px 48px;
     mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent);
 }
@@ -308,7 +310,7 @@ h4 { font-size: 1.05rem; }
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(0, 163, 224, 0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(26, 46, 191, 0.12) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -325,7 +327,7 @@ h4 { font-size: 1.05rem; }
     align-items: center;
     gap: 8px;
     padding: 6px 14px;
-    background: rgba(0, 163, 224, 0.1);
+    background: rgba(26, 46, 191, 0.1);
     color: var(--primary);
     font-size: 0.8rem;
     font-weight: 600;
@@ -451,7 +453,7 @@ h4 { font-size: 1.05rem; }
     height: 12px;
     border-radius: 50%;
     background: var(--primary-light);
-    border: 3px solid rgba(0, 163, 224, 0.25);
+    border: 3px solid rgba(26, 46, 191, 0.25);
 }
 
 .route-line {
@@ -560,7 +562,7 @@ h4 { font-size: 1.05rem; }
 }
 
 .service-card:hover {
-    border-color: rgba(0, 163, 224, 0.3);
+    border-color: rgba(26, 46, 191, 0.3);
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
 }
@@ -571,7 +573,7 @@ h4 { font-size: 1.05rem; }
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(10, 77, 140, 0.08), rgba(0, 163, 224, 0.08));
+    background: linear-gradient(135deg, rgba(10, 20, 130, 0.08), rgba(26, 46, 191, 0.08));
     border-radius: 14px;
     margin-bottom: 20px;
     color: var(--primary);
@@ -810,7 +812,7 @@ h4 { font-size: 1.05rem; }
 
 .timeline-item.active .timeline-dot {
     background: var(--accent);
-    box-shadow: 0 0 0 4px rgba(0, 194, 168, 0.3);
+    box-shadow: 0 0 0 4px rgba(230, 0, 0, 0.3);
 }
 
 .timeline-item strong {
@@ -848,7 +850,7 @@ h4 { font-size: 1.05rem; }
     height: 80px;
     background: linear-gradient(135deg, var(--primary-light), var(--accent));
     border-radius: 50%;
-    box-shadow: 0 0 40px rgba(0, 163, 224, 0.5);
+    box-shadow: 0 0 40px rgba(26, 46, 191, 0.5);
 }
 
 .globe-ring {
@@ -942,7 +944,7 @@ h4 { font-size: 1.05rem; }
 /* ===== CTA Banner ===== */
 .cta-banner {
     padding: 80px 0;
-    background: linear-gradient(135deg, #083A6B 0%, #0A4D8C 50%, #00A3E0 100%);
+    background: linear-gradient(135deg, #070E5C 0%, #0A1482 50%, #1A2EBF 100%);
     text-align: center;
 }
 
@@ -1054,7 +1056,7 @@ h4 { font-size: 1.05rem; }
 .form-group textarea:focus {
     border-color: var(--primary-light);
     background: var(--white);
-    box-shadow: 0 0 0 3px rgba(0, 163, 224, 0.15);
+    box-shadow: 0 0 0 3px rgba(26, 46, 191, 0.15);
 }
 
 .form-group textarea {
