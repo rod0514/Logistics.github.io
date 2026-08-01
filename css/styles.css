@@ -207,6 +207,17 @@ h4 { font-size: 1.05rem; }
     color: var(--dark);
 }
 
+.logo-img {
+    height: 42px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.logo-img-footer {
+    height: 48px;
+}
+
 .logo-icon {
     width: 36px;
     height: 36px;
