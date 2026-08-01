@@ -1,4 +1,4 @@
-// ===== Apex Logistics - Main JS =====
+// ===== Gardenia Logistics - Main JS =====
 
 document.addEventListener('DOMContentLoaded', () => {
     // Header scroll effect
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     trackingForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const id = trackingInput.value.trim() || 'APL-88421-X';
+        const id = trackingInput.value.trim() || 'GDN-88421-X';
 
         document.getElementById('resultId').textContent = id.toUpperCase();
         document.getElementById('resultStatus').textContent = 'In Transit';
